@@ -33,7 +33,25 @@ const nion = (p,q) => {
     return twist(p, q) * ((p ^ q) + 1);
 }
 
-//Represents a 
+/*Represents a method to multiply two objects representing generic numbers.
+
+Example: https://playcode.io/669529/
+
+(This example should equal to 0 despite neither number being 0.)
+
+a = {
+  9: 1,
+  10: 1,
+}
+
+b = {
+  13: 1,
+  14: -1,
+}
+
+console.log(multiply(a, b))
+
+*/
 const multiply = (a, b) => {
     let r = {};
 
@@ -53,3 +71,5 @@ const multiply = (a, b) => {
 
     return r;
 }
+
+export default multiply;
